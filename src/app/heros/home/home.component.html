@@ -1,0 +1,50 @@
+<div class="container mt-2">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let hero of heros$ | async">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ hero.name }}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{ hero.gender }}</li>
+          <li class="list-group-item">${{ hero.birth_year }}</li>
+          <li class="list-group-item">${{ hero.height }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<table mat-table class="mat-elevation-z8">
+  <div *ngFor="let hero of heros$ | async">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell>Nome</th>
+      <td mat-cell>{{ hero.name }}</td>
+    </ng-container>-->
+
+<!-- Name Column -->
+<!--<ng-container matColumnDef="gender">
+      <th mat-header-cell>Gênero</th>
+      <td mat-cell>{{ hero.gender }}</td>
+    </ng-container>-->
+
+<!-- Weight Column -->
+<!--<ng-container matColumnDef="height">
+      <th mat-header-cell>Altura</th>
+      <td mat-cell>{{ hero.height }}</td>
+    </ng-container>-->
+
+<!-- Symbol Column -->
+<!--<ng-container matColumnDef="birth_year">
+      <th mat-header-cell>Nascimento</th>
+      <td mat-cell>{{ hero.birth_year }}</td>
+    </ng-container>-->
+
+<!--<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </div>-->
+<!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+<!-- Position Column -->
+<!--</table>-->
